@@ -1,0 +1,37 @@
+{
+  "name": "electronpoc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "nw .",
+    "prod": "nwbuild --platforms win32,Win64,osx64 --buildDir dist/ nwpoc.js"
+  },
+  "window": {
+    "toolbar": true,
+    "width": 800,
+    "height": 500,
+    "header": {
+      "back": true,
+      "forward": true,
+      "refresh": false,
+      "dev": false,
+      "address": true
+    }
+  },
+  "webkit": {
+    "plugin": true
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^5.3.1",
+    "puppeteer-extra": "^3.1.15",
+    "puppeteer-extra-plugin-devtools": "^2.2.14",
+    "puppeteer-extra-plugin-stealth": "^2.6.5",
+    "puppeteer-extra-plugin-user-data-dir": "^2.2.7",
+    "puppeteer-extra-plugin-user-preferences": "^2.2.7",
+    "screenshot-desktop": "^1.12.2"
+  }
+}
